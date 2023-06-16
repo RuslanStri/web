@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Ruslan Strilianyi</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ede0df" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#202124" />
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__title-block">
+                <h1 class="header__title">Front-End Development</h1>
+                <h1 class="header__title">Web Design</h1>
+            </div>
+            
+            <div class="header__img">
+                <img src="media/my-photo.jpg" alt="My photo" class="header__img">
+            </div>
+            <nav class="header__nav">
+                <a class="header__link text" href="#" data-no="1"><span class="text-underline">01</span>&nbsp;Hello</a>
+                <a class="header__link text" href="#" data-no="2"><span class="text-underline">02</span>&nbsp;Skills</a>
+                <a class="header__link text" href="#" data-no="3"><span class="text-underline">03</span>&nbsp;Portfolio</a>
+                <a class="header__link text" href="#" data-no="4"><span class="text-underline">04</span>&nbsp;Contacs</a>
+            </nav>
+            <div class="header__colors">
+                <button class="light-btn color-btn color-btn_active text">Light</button>
+                <button class="dark-btn color-btn text">Dark</button>
+            </div>
+            <div class="header__decoration-line decoration-line"></div>
+        </div>        
+    </header>
+
+    <main class="main">
+        <div class="main__container">
+            <section class="hello-sec section section-active" data-no="1">
+                <h2 class="hello-sec__title main__title">Hello, I am Ruslan</h2>
+                <p class="hello-sec__text text">Over the years, I have studied various areas of IT. From the development of mobile applications and games to IT management. I took various courses in the field of IT to understand what I like most. And most of all I liked the Front-end development in which I want to move forward. I don't have much experience or many projects at that moment, but I'm sure that the main thing in any business is desire, and I have it.</p>
+                <a download href="" class="hello-sec__dowload text">Download CV</a>
+                <div class="next-page-block">
+                    <a href="#" class="next-page">next </a>
+                    <div class="next-line"></div>
+                </div>
+                <div class="hello-sec__decoration-line decoration-line"></div>
+            </section>
+            <section class="skills-sec section section-next" data-no="2">
+                <h2 class="skills-sec__title main__title">My skills</h2>
+                <div class="skills-sec__chart-container">
+                    <canvas class="skills-sec__chart"></canvas>
+                </div>    
+                <div class="next-page-block">
+                    <a href="#" class="next-page">next </a>
+                    <div class="next-line"></div>
+                </div>
+                <div class="prev-page-block">
+                    <div class="prev-line"></div>
+                    <a href="#" class="prev-page">prev</a>                    
+                </div>
+            </section>
+            <section class="portfolio-sec section section-hidden" data-no="3">
+                <h2 class="portfolio-sec__title main__title">Portfolio</h2>
+                <button class="portfolio-sec__button portfolio-sec__prev "><img src="media/arrow-left.png" alt="left arrow" class="portfolio-sec__button-img"></button>
+                <div class="portfolio-sec__container">                    
+                    <a class="portfolio-sec__link portfolio-sec__link_active" target="_blank" href="https://coca-cola-rust.000webhostapp.com/"><img src="media/portfolio-1.png" alt="Website 1" class="portfolio-sec__portfolio-img"></a>
+                    <a class="portfolio-sec__link portfolio-sec__link_hidden" target="_blank" href="https://s-kanban-t.000webhostapp.com/"><img src="media/portfolio-2.png" alt="Website 2" class="portfolio-sec__portfolio-img"></a>                    
+                </div>
+                <button class="portfolio-sec__button portfolio-sec__next"><img src="media/arrow-right.png" alt="right arrow" class="portfolio-sec__button-img"></button> 
+                <div class="next-page-block">
+                    <a href="#" class="next-page">next </a>
+                    <div class="next-line"></div>
+                </div>
+                <div class="prev-page-block">
+                    <div class="prev-line"></div>
+                    <a href="#" class="prev-page">prev</a>                    
+                </div>
+            </section>
+            <section class="contacts-sec section section-hidden" data-no="4">
+                <h2 class="contacts-sec__title main__title">Contact&nbsp;me</h2>
+                <div class="contacts-sec__links-container">
+                    <div class="contacts-sec__contact">
+                        <i class="fa-brands fa-whatsapp contacts-sec__icon"></i>
+                        <a class="contacts-sec__link text" target="_blank" href="https://api.whatsapp.com/send?phone=380975670003">+380&nbsp;975&nbsp;670&nbsp;003</a>
+                    </div>
+                    <div class="contacts-sec__contact">
+                        <i class="fa-sharp fa-regular fa-envelope contacts-sec__icon"></i>
+                        <a class="contacts-sec__link text" target="_blank" href="mailto: abc@example.com">rulet.st@ukr.net</a>
+                    </div>
+                    <div class="contacts-sec__contact">
+                        <i class="fa-brands fa-facebook-f contacts-sec__icon"></i>
+                        <a class="contacts-sec__link text" target="_blank" href="https://www.facebook.com/profile.php?id=100006332887106">my facebook</a>
+                    </div>
+                </div>
+                <form class="contacts-sec__form" action="https://formspree.io/f/mwkjglok" method="POST">
+                    <div class="contacts-sec__messege-user-box">
+                        <input type="text" class="contacts-sec__messege-user text" placeholder="Your name" required name="name">
+                        <input type="email" class="contacts-sec__messege-user text" placeholder="Your email" required name="email">
+                    </div>
+                    <textarea class="contacts-sec__messege-text text" placeholder="Write your message here" required name="message"></textarea>
+                    <button class="contacts-sec__submit text" type="submit">Send</button>
+                </form>
+                <div class="prev-page-block">
+                    <div class="prev-line"></div>
+                    <a href="#" class="prev-page">prev</a>                    
+                </div>
+                <div class="contacts-sec__decoration-line decoration-line"></div>
+            </section>
+            <div class="page-numbers">
+                <div class="page-number page-number_active text">01</div>
+                <div class="page-number text">02</div>
+                <div class="page-number text">03</div>
+                <div class="page-number text">04</div>
+            </div>
+        </div>
+    </main>
+
+    <img src="media/logo-full-black.png" alt="Full logo" class="body__logo">
+
+    <script src="https://kit.fontawesome.com/aad414a05a.js" crossorigin="anonymous"></script>
+    <script defer src="scripts/script-pages.js"></script>
+    <script defer src="scripts/script-email-form.js"></script>
+    <script defer src="scripts/script-chart.js"></script>
+</body>
+</html>
